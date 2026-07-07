@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Prediction</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Prediction Result</h1>
+
+<img
+src="{{ image_path }}"
+width="320">
+
+<h2>
+
+{{ prediction }}
+
+</h2>
+
+<h3>
+
+Confidence
+
+{{ confidence }} %
+
+</h3>
+
+<a href="/">
+
+Try Another Image
+
+</a>
+
+</div>
+
+</body>
+
+</html>

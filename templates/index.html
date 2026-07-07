@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Traffic Sign Classification - VGG16</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Traffic Sign Classification</h1>
+
+<p>
+Transfer Learning VGG16
+</p>
+
+<form
+action="/predict"
+method="POST"
+enctype="multipart/form-data">
+
+<input
+type="file"
+name="image"
+accept="image/*"
+required>
+
+<button type="submit">
+
+Predict
+
+</button>
+
+</form>
+
+</div>
+
+</body>
+
+</html>
